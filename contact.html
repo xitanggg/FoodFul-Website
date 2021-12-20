@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="You have access to a plenty of contact form, contact information and Google map styles.">
+    <meta name="keywords" content="contact, map, address, phone, fax, block, html code">
+
+    <title>Contact - DairyX</title>
+
+    <!-- Styles -->
+    <link href="assets/css/page.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/logo-dark.png">
+    
+  </head>
+
+  <body class="demo-section">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+    
+        <div class="navbar-left mr-4">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="index.html">
+            <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
+          </a>
+        </div>
+    
+        <section class="navbar-mobile">
+          <nav class="nav nav-navbar mr-auto">
+            <a id="nav-home" class="nav-link active" href="index.html#home">Home</a>
+            <a id="nav-features" class="nav-link" href="index.html#section-features">Features</a>
+            <a id="nav-subscribe" class="nav-link" href="index.html#subscribe">Subscribe</a>
+            <a class="nav-link" href="faq.html">FAQ</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </nav>
+    
+        </section>
+    
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header p-0">
+    </header><!-- /.header -->
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <section class="section">
+        <div class="container">
+
+          <h2 class="text-center">Contact Us</h2>
+
+          <div class="d-flex justify-content-center gap-y mt-6">
+            <form class="col-lg-6" action="assets/php/sendmail.php" method="POST" data-form="mailer">
+
+              <div class="alert alert-success d-on-success">We received your message and will contact you back soon.</div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input class="form-control form-control-lg" type="text" name="firstname" placeholder="First Name">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input class="form-control form-control-lg" type="text" name="lastname" placeholder="Last Name">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input class="form-control form-control-lg" type="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input class="form-control form-control-lg" type="text" name="phone" placeholder="Phone">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control form-control-lg" rows="4" placeholder="What do you have in mind?" name="message"></textarea>
+              </div>
+
+              <button class="btn btn-lg btn-primary" type="submit">Send message</button>
+
+            </form>
+
+        </div>
+
+      </section>
+
+    </main><!-- /.main-content -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+			<div class="container">
+				<div class="row gap-y align-items-center">
+					<div class="col-md-3 text-center text-md-left">
+						<a href="#"
+							><img
+								src="assets/img/logo-dark.png"
+								style="height: 60px"
+								alt="logo"
+						/></a>
+					</div>
+
+					<div class="col-md-6">
+						<div class="nav-center">
+							<a class="nav-link" style="text-align: center"
+								>Proudly Founded By
+								<span style="color: red">Cornell</span> Alumni<br />(The World's
+								Leading Institution In Cloud Computing And Agriculture)</a
+							>
+						</div>
+					</div>
+
+					<div class="col-md-3 text-center text-md-right">
+						<small>© 2019. All rights reserved.</small>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/page.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script type="text/javascript">
+
+      // Callback functions for Block #1
+      //
+      function onSuccessCallback() {
+        console.log('The email sent successfully.');
+      }
+
+      function onErrorCallback(err) {
+        console.log('An error occured while sending the email. The error message is: ' + err);
+      }
+
+    </script>
+
+  </body>
+</html>
